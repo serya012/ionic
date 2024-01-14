@@ -7,15 +7,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding-start ion-padding-end">
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <p>Id do dispositivo:</p>
-  <pre>{{dev.id | json }}</pre>
+  <div class="info-container">
+    <div class="info-section">
+      <p class="info-label">Id do dispositivo:</p>
+      <pre class="info-value">{{dev.id | json }}</pre>
+    </div>
 
-  <p>Dados do dispositivo:</p>
-  <pre>{{ dev.info | json }}</pre>
+    <div class="info-section">
+      <p class="info-label">Dados do dispositivo:</p>
+      <pre class="info-value">{{ dev.info | json }}</pre>
+    </div>
 
-  <p>Status da bateria:</p>
-  <pre>{{ dev.bat | json }}</pre>
+    <div class="info-section">
+      <p class="info-label">Status da bateria:</p>
+      <pre class="info-value">{{ dev.bat | json }}</pre>
+    </div>
+  </div>
 
 </ion-content>
