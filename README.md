@@ -35,7 +35,7 @@ O aplicativo foi desenvolvido utilizando as seguintes linguagens e tecnologias:
 
 ## Contribuição do Instrutor
 
-Este projeto recebeu uma valiosa contribuição do nosso instrutor, que disponibilizou o projeto base e um modelo que ele mesmo desenvolveu. Além disso, ele criou um conjunto de passos a passo no GitHub Gist, facilitando significativamente o nosso trabalho e proporcionando uma compreensão mais clara do desenvolvimento do aplicativo. Agradecemos imensamente pela orientação e apoio fornecidos.
+Este projeto recebeu uma valiosa contribuição do nosso instrutor, [@Luferat](https://github.com/Luferat), que disponibilizou o projeto base e um modelo que ele mesmo desenvolveu. Além disso, ele criou um conjunto de passos a passo no [GitHub Gist](https://gist.github.com/Luferat/2602ea9948fd2f7e878568506c2b7c6c), facilitando significativamente o nosso trabalho e proporcionando uma compreensão mais clara do desenvolvimento do aplicativo. Agradecemos imensamente pela orientação e apoio fornecidos.
 
 ## Como Rodar o Projeto
 
@@ -76,3 +76,11 @@ Siga os passos abaixo para rodar a aplicação localmente:
    - Abra seu navegador e acesse `http://localhost:8100` para visualizar a aplicação.
 
 Agora você deverá ter o aplicativo Ionic com Firebase rodando em seu ambiente local. Sinta-se à vontade para explorar e contribuir para o projeto!
+
+## Como Contribuir
+
+Se você deseja contribuir para este projeto, siga as diretrizes de contribuição no arquivo `CONTRIBUTING.md`. Agradecemos antecipadamente por suas contribuições!
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](LICENSE).
