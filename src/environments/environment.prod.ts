@@ -1,23 +1,24 @@
 export const environment = {
-  production: true,
+  production: false,
 
   // Configurações do aplicativo.
   appName: "IoniQuinho",
   appSlogan: "O melhor App da Web!!",
 
   // Tipo de login. ['redirect' ou 'popup'].
-  signInMethod: "redirect",
+  signInMethod: "popup",
 
   // URL base da API REST.
-  apiURL: "https://ionteste-2023-default-rtdb.firebaseio.com/",
+  apiURL: "https://ioniquinho-6701d-default-rtdb.firebaseio.com/",
 
   // Altere estas chaves conforme seu próprio projeto no Firebase.com.
   firebase: {
-    apiKey: "AIzaSyB3qGcFb11tOQGm2_vOnUxd7rQaBhcMkPQ",
-    authDomain: "ionteste-2023.firebaseapp.com",
-    projectId: "ionteste-2023",
-    storageBucket: "ionteste-2023.appspot.com",
-    messagingSenderId: "788295881622",
-    appId: "1:788295881622:web:b1ea5f214104177569c3b7"
+    apiKey: "AIzaSyCBI6yXOoPEdtsv0Y7YnSFApougnYRGGtk",
+    authDomain: "ioniquinho-6701d.firebaseapp.com",
+    databaseURL: "https://ioniquinho-6701d-default-rtdb.firebaseio.com",
+    projectId: "ioniquinho-6701d",
+    storageBucket: "ioniquinho-6701d.appspot.com",
+    messagingSenderId: "1012392015572",
+    appId: "1:1012392015572:web:6a7a4205547db495c96d41"
   }
 };
