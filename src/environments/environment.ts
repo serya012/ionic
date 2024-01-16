@@ -2,8 +2,8 @@ export const environment = {
   production: false,
 
   // Configurações do aplicativo.
-  appName: "IoniQuinho",
-  appSlogan: "O melhor App da Web!!",
+  appName: "Ionic",
+  appSlogan: "O melhor App Mobile!!",
 
   // Tipo de login. ['redirect' ou 'popup'].
   signInMethod: "popup",
