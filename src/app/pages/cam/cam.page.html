@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Tirar Foto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="!photoURL">
+
+    Clique no botão para tirar uma foto:
+
+    <ion-fab slot="fixed" vertical="center" horizontal="center">
+      <ion-fab-button (click)="getPhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </div>
+
+  <div *ngIf="photoURL" class="ion-text-center">
+    <ion-img [src]="photoURL"></ion-img>
+    <p><a href="/cam">Nova Foto</a></p>
+  </div>
+
+</ion-content>

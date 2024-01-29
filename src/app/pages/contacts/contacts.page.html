@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Faça Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div *ngIf="!form.sended" class="contact-form">
+
+    <p>Preencha todos os campos abaixo para entrar em contato com a equipe do {{ env.appName }}.</p>
+
+    <ion-item>
+      <ion-label position="floating">Nome:</ion-label>
+      <ion-input type="text" name="name" placeholder="Seu nome completo" [autofocus]="true" [(ngModel)]="form.name" required minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input type="email" name="email" placeholder="Seu e-mail" [(ngModel)]="form.email" required email></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Assunto:</ion-label>
+      <ion-input type="text" name="subject" placeholder="Assunto do contato" [(ngModel)]="form.subject" required minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Mensagem:</ion-label>
+      <ion-textarea name="message" placeholder="Mensagem do contato" [(ngModel)]="form.message" required minlength="5"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" (click)="processForm()">Enviar</ion-button>
+
+  </div>
+
+  <div *ngIf="form.sended" class="success-message">
+    <h4>Olá {{ form.name }}!</h4>
+    <p>Seu contato foi enviado com sucesso.</p>
+    <p><em>Obrigado...</em></p>
+  </div>
+
+</ion-content>
